@@ -1,4 +1,59 @@
+body {
+  background-image: url(../images/stardust.png);
+  animation: 100s scroll infinite linear;
+}
+
+.hangman {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: white;
+}
+
 .head {
   width: 200px;
   height: auto;
+  margin: 10px;
+  display: block;
+}
+
+.logo {
+  width: 60%;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 60px;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #f5f5f5;
+	border-radius: .4em;
+  padding: 25px 0px;
+  margin: 10px 5px 30px 5px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 22px solid transparent;
+	border-top-color: #f5f5f5;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -11px;
+	margin-bottom: -22px;
+}
+
+@keyframes scroll {
+    to {
+        background-position: 0px -3000px
+    }
 }
