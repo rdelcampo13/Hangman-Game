@@ -91,7 +91,7 @@ var game = {
       this.wins = this.wins + 1;
       winsID.innerHTML = this.wins;
     };
-    
+
   },
 };
 
